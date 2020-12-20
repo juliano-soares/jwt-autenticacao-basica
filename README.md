@@ -1,10 +1,6 @@
 # JWT - Autenticação e melhores práticas
 
-Repositório do Workshop de melhores práticas usando JWT.
-
-Na branch `complete` você encontra a versão final do projeto feita durante o workshop.
-
-Este projeto foi desenvolvido em um Mac, mas acredito que tudo rode em Linux, e no Windows com algumas modificações em alguns comandos.
+Repositório de melhores práticas usando JWT.
 
 ## Requisitos
 
@@ -37,21 +33,8 @@ Para facilitar os testes dos endpoints, pode ser usado o arquivo `JWT.postman_co
 ## Comandos para criação de chaves privada e pública
 
 ```
-openssl genrsa -out private-key.pem 2048 
+openssl genrsa -out private-key.pem 2048
 openssl rsa -in private-key.pem -pubout -out public-key.pem
 ```
 
 Caso queira usar chaves previamente geradas, copie o arquivo `.env.example` para o arquivo `.env`. Mas lembre-se: **Não** use essas chaves em produção, **apenas** para teste.
-
-## Dúvidas
-
-Qualquer dúvida/problema referente ao projeto, sinta-se livre para abrir uma issue no projeto que eu vou responder assim que possível.
-
-## Links e referências
-
-Escrevi um artigo em que falo de alguns conceitos abordados no workshop, ele pode ser acessado clicando [aqui](https://askanayama.medium.com/entendendo-a-autentica%C3%A7%C3%A3o-com-jwt-2c562697a240).
-
-- [jwt.io](https://jwt.io/) - Debugger e referências sobre JWT (em inglês)
-- [Melhores práticas ao usar JWT](https://auth0.com/blog/a-look-at-the-latest-draft-for-jwt-bcp/) (em inglês)
-- [RFC do JWT](https://tools.ietf.org/html/rfc7519) (em inglês)
-- [Claims do JWT](https://ldapwiki.com/wiki/JSON%20Web%20Token%20Claims) - Aqui você encontra as reserved claims com breves explicações e também as do - [OpenID Connect Standard Claims](https://ldapwiki.com/wiki/OpenID%20Connect%20Standard%20Claims)
